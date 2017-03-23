@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Thai Cafe</title>
+	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  
+  <script type="text/javascript">
+
+  var slideimages = new Array() // create new array to preload images
+  slideimages[0] = new Image() // create new instance of image object
+  slideimages[0].src = "img/Atcsign.JPG" // set image src property to image path, preloading image in the process
+  slideimages[1] = new Image()
+  slideimages[1].src = "img/Bcurry.JPG"
+  slideimages[2] = new Image()
+  slideimages[2].src = "img/Cveggies.JPG"
+  slideimages[3] = new Image()
+  slideimages[3].src = "img/diningroom.JPG"
+</script>
+
+</head>
+<body>
+	<div class="wrap">
+	<header class="main-header">
+		<div class="container clearfix">
+      <a href="index.html"><img class="pretty" src="img/pretty.jpg"></a>
+			<h1 class="name"><a href="index.html">Thai Cafe</a></h1>
+			<ul class="main-nav">
+        <li><a href="index.html" class="selected">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+				<li><a href="loc.html">Location &amp; Hours</a></li>
+				<li><a href="about.html">About &amp; Contact</a></li>
+				<li><a href="rev.html">Reviews</a></li>
+			</ul>
+		</div>
+	</header><!--/.main-header-->   
+
+	<div class="banner">
+		<span class="tagline">Experience the tastes of Thailand, right here in Jackson...</span>
+	</div><!--/.banner-->
+
+	<div class="container clearfix">
+		
+		<div class="secondary col homel">
+			<h2>Welcome!</h2>
+			<p>We are a small restaurant in Jackson, TN. serving authentic Thai cuisine!</p>
+      <p>We offer dine in and take out. We have private dining rooms avaliable, no need to make reservations.</p>
+      <p>All of our food is prepared fresh in our kitchen and made from organic ingredients. We offer many health-conscious food items and can adjust any menu item to your liking.</p>
+		</div><!--/.secondary-->
+		
+		<div class="primary col homec">
+			
+      <img src="img/Atcsign.JPG" id="slide" width="100%" />
+
+      <script type="text/javascript">
+      
+      //variable that will increment through the images
+      var step=0
+      
+      function slideit(){
+       //if browser does not support the image object, exit.
+       if (!document.images)
+        return
+       document.getElementById('slide').src = slideimages[step].src
+       if (step<3)
+        step++
+       else
+        step=0
+       //call function "slideit()" every 2.5 seconds
+       setTimeout("slideit()",3000)
+      }
+      
+      slideit()
+      
+      </script>
+      
+    </div><!--/.primary-->
+		
+		<div class="tertiary col homer">
+			<h2>Bold Flavors, Memorable Meals</h2>
+			<p>Here at Thai Cafe, we strive to provide you with deliciously authentic Thai cuisine. We pride ourselves in our delicious food and invite you to visit during our <a href="loc.html">hours.</a></p> 
+        <p>We offer everything from curry to shrimp and our meals are avaliable however spicy you want them. </p>
+		</div><!--/.tertiary-->	
+		
+	</div><!--/.container-->
+</div> <!-- /.wrap -->
+	<footer class="main-footer">
+		<ul class="foot-hrs">
+      <li><strong>Wednesday - Saturday:</strong> </li>
+        <li>11am - 2:30pm, 5pm - 9pm </li>
+      <li><strong>Sunday - Tuesday:</strong> Closed</li>
+    </ul>
+		<ul class="foot-nav">
+				<li><a href="index.html" class="selected">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+				<li><a href="loc.html">Location &amp; Hours</a></li>
+				<li><a href="about.html">About &amp; Contact</a></li>
+				<li><a href="rev.html">Reviews</a></li>
+			</ul>
+    <p><a href="loc.html">605 Carriage House Dr # J, Jackson, TN.</a></p>
+    <ul class="foot-num-home">
+      <li><strong>Contacts:</strong></li>    
+      <li><a href="tel:731-984-7050">(731)-984-7050</a></li>
+      <li class="email"><a href="mailto:thaicafejackson@gmail.com">E-mail</a></li>
+    </ul>
+	</footer>
+	
+</body>
+</html>

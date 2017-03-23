@@ -1,0 +1,357 @@
+/* ================================= 
+  Base Element Styles
+=================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+}
+
+p {
+	font-size: 1em;
+	margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+	color: #203C47;
+}
+
+h2,
+h3,
+h4 {
+	margin-top: 0;
+}
+
+h4 {
+	margin-bottom: .4em;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+figure {
+	margin: 0;
+	line-height: 0;
+	position: relative;
+}
+
+figcaption {
+	font-size: .875em;
+	line-height: 1.5;
+	color: #fff;
+	padding: 1em;	
+	background: rgba(19,43,102, .85);
+	
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.25em;
+	margin: 0;
+}
+
+.main-nav {
+	margin-top: 24px; 
+}
+
+.name a,
+.main-nav a {
+  display: block;
+	text-align: center;
+	padding: 10px 15px;
+}
+	
+.main-nav a {
+  font-size: .95em;
+  color: #203C47;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+}
+
+.main-nav a:hover,
+.main-nav a.selected,
+.foot-nav a:hover,
+.foot-nav a.selected {
+  text-decoration: underline;
+  text-decoration-color: #203C47;
+}
+
+
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+.banner,
+.main-footer {
+	text-align: center;
+}
+
+.banner {
+	color: #fff;
+	padding: 3.2em 0;
+	margin-bottom: 60px;
+  font-size: 1.1em;
+}
+
+
+
+.col {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+.main-footer {
+	background: #d9e4ea;
+	padding: 2em 0;
+  margin-top: 0;
+}
+
+
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 190px;
+}
+
+.headline {
+	margin-bottom: 0;
+}
+
+.icon-location {
+	width: 35px;
+	position: absolute;
+	top: -15px;
+	right: -15px;
+	z-index: 2;
+}
+
+.name {
+  font-family: Kaushan Script;
+  font-size: 45px;
+  text-align: center;
+}
+
+.pretty {
+  width: 95px;
+  height: 95px;
+  float: left;
+  margin-left: -100px;
+}
+
+.tagline {
+  margin-top: 25px;
+  display: block;
+}
+
+ .banner {
+  background-image: url("../img/banner3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;   
+} 
+
+.banner span:hover {
+  text-decoration: underline;
+}
+
+.email:hover {
+  text-decoration: underline;
+}
+
+
+/* ================================= 
+  Pages
+=================================== */
+
+/* ---- Home Page ---- */
+
+.homec img {
+  border: 8px #a32020;
+  border-style: ridge;
+}
+
+/* ---- Location & Hours ---- */
+
+.location-col {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.map {
+  margin: 0 auto;
+}
+
+.mapcol {
+  width: 100vw;
+  float: none;
+}
+
+.frontpic {
+  width: 300px;
+  height: 300px;
+}
+
+/* ---- About & Contact ---- */
+
+.chef {
+  max-height: 300px;
+  margin: 0 auto;
+}
+
+.imgdiv {
+  width: 100%;
+}
+
+.abt-col {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/* ---- Reviews ---- */
+
+.rev-col {
+  width: 100%;
+}
+
+.rev-col img {
+  display: inline-block;
+}
+
+.rev-logos {
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.rev-logos li {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0 108px;
+}
+
+.zomato {
+  max-width: 170px;
+  max-height: 108px;
+ 
+}
+
+.yelp {
+  max-height: 118px;
+  max-width: 118px;
+}
+
+.trip {
+  max-width: 120px;
+  max-height: 90px;
+}
+
+.zomato:hover {
+  transform: rotate(360deg);
+  transition-duration: 1s;
+}
+
+.yelp:hover {
+  transform: rotate(360deg);
+  transition-duration: 1s;
+}
+
+.trip:hover {
+  transform: rotate(360deg);
+  transition-duration: 1s; 
+}
+
+.rev-col {
+  margin: 0 auto;
+}
+
+
+
+/* ---- Menu ---- */
+
+
+
+
+.tab-group {
+  margin: 0 auto;
+  max-width: 40em;
+  width: 100%;
+}
+
+.tab {
+  position: relative;
+  width: 100%;
+}
+
+.tab input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -999;
+}
+
+.tab label {
+  background: #a32020;
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  line-height: 3;
+  padding-left: .5em;
+  margin-bottom: .5em;
+  transition: letter-spacing .35s;
+}
+
+.tab input:focus + label,
+.tab label:hover {
+  background: #a32020;
+  letter-spacing: 2px;
+}
+
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all .5s
+}
+
+.tab-content p {
+  margin: 1em 0;
+}
+
+.tab input:checked ~ .tab-content {
+  max-height: 100vh;
+}
+
+.menu-col {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 60px;
+  width: 80%;
+}
+
